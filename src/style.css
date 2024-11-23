@@ -1,0 +1,62 @@
+.snowflake-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #001f3f; /* Night sky color */
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  animation: fall infinite linear;
+  opacity: 0.8;
+}
+
+/* Create randomized animation for each snowflake */
+.snowflake:nth-child(even) {
+  animation-duration: 10s;
+  animation-delay: calc(-1s * var(--i));
+}
+
+.snowflake:nth-child(odd) {
+  animation-duration: 7s;
+  animation-delay: calc(-1s * var(--i));
+}
+
+/* Snowflake falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(calc(10vw - 20vw * random(-1, 1)));
+    opacity: 0.5;
+  }
+}
+
+/* Styling for the YouTube link */
+#youtube {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #ff0;
+  font-size: 18px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+#youtube:hover {
+  background: rgba(255, 255, 0, 0.8);
+}

@@ -1,0 +1,108 @@
+/* Centering the form in the upper middle */
+.register-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.register-box {
+  position: relative;
+  background-color: #1b2430; /* Dark navy blue */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 420px;
+}
+
+.back-button{
+  font-size: 14px;
+  color: #fff !important;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.back-button .exitIcon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.register-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #2a3749; /* Slightly lighter navy */
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+
+.register-input:focus {
+  border-color: #5661c0; /* Subtle accent color */
+}
+
+.register-button {
+  background-color: #f8b700; /* Bright yellow button */
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.register-button:hover {
+  background-color: #e2a700;
+}
+
+.already-account {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.login-link {
+  color: #f8b700; /* Yellow link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
