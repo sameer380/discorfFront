@@ -16,6 +16,7 @@ const App = () => {
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
 					<Route path="/home" element={<Homepage />} />
+					<Route path="/" element={<Homepage />} />
 				</Routes>
 				<ToastContainer theme="dark" />
 			</BrowserRouter>
