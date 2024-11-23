@@ -20,7 +20,7 @@ export default function Register() {
 		e.preventDefault(); // Prevent default form submission
 		try {
 			// Call the API endpoint with user details
-			const response = await axios.post("https://discordback.onrender.com", {
+			const response = await axios.post("https://discordback.onrender.com/register", {
 				username,
 				email,
 				password,
