@@ -28,7 +28,7 @@ const Login = () => {
 			return;
 		}
 		try {
-			const response = await axios.post("https://discordback.onrender.com", {
+			const response = await axios.post("https://discordback.onrender.com/login", {
 				email,
 				password,
 			});
